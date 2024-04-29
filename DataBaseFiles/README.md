@@ -53,15 +53,29 @@ END;
 ```
 
 - ## Read:
-Está en el archivo Create&ReadProcedures.sql en la línea 180, [link para esa función](Create&ReadProcedures.sql#L80).
+- ### Primera función:
+Está en el archivo Create&ReadProcedures.sql en la línea 180, [link para esa función](Create&ReadProcedures.sql#L100).
+Esta es la función propuesta que involucra al menos 4 tablas, las involucradas son:
+- `IMAGE`
+- `OBSERVATION`
+- `IMAGE_OWNER`
+- `FIGURE`
+- `GEOGRAPHIC_COORDENATES`
+- `PERSON`
+- `TAXON`
+  
+Recibe recibe el ID de la imagen y despliega un informe con todos los siguientes datos:
+el ID de la imagen, la licencia de uso, el nombre y apellidos de la persona que creó la observación, su latitud y longitud, el dueño de la imagen, el link e la imagen, las fechas en que fue tomada y subida, el nombre del taxon involucrado, su taxonomía completa, el ID de la observación y la nota realizada de la observación.
 
-Recibe los valores 
-```sql
-SELECT_IMAGE_OBSERVATIONS_TABLE(p_image_id IN NUMBER)
-```
-Se llama la función de esta manera: Se cambia el 21 por el ID de la imagen a la cual queremos verle todos los datos
+Se llama la función de esta manera: Se cambia el 21 por el ID de la imagen a la cual queremos verle todos los datos.
 ```sql
 SELECT * FROM TABLE(SELECT_IMAGE_OBSERVATIONS_TABLE(21));
+```
+- ### Segunda función:
+Está en el archivo Create&ReadProcedures.sql en la línea 180, [link para esa función](Create&ReadProcedures.sql#L65).
+
+```sql
+SELECT * FROM TABLE(SELECT_IMAGES_PANTALLA_PRINCIPAL);
 ```
 
 - ## Update:
@@ -187,14 +201,5 @@ end;
 ```
 
 ---
-## Informe propuesto que involucra al menos cuatro tablas:
-Este es la vista en la pantalla principal de todas las observaciones existentes en el sistema, este informe involucra las tablas:
-#### `IMAGE`, `PERSON`, `FIGURE` y `TAXON`
-Está en el archivo Create&ReadProcedures.sql en la línea 26, [link para esa función](Create&ReadProcedures.sql#L26).
 
-Este hace un loop sobre todas las observaciones existentes y devuelve un informe con el ID de la imagen, el nombre y apellido de la persona dueña de la observación,la imagen como tal,la licencia de uso, las fechas en que la imagen fue tomada y subida a la plataforma y el nombre del taxón.
 
-Esta se llama así:
-```sql
-SELECT * FROM TABLE(SELECT_IMAGES_PANTALLA_PRINCIPAL);
-```
