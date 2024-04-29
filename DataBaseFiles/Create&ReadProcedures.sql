@@ -70,7 +70,6 @@ SELECT * FROM TABLE(SELECT_IMAGES_PANTALLA_PRINCIPAL);
 
 
 --________________________________________________________________________________________--
-
   /* * * * * * * * * * * * * * * * * * * * * * * * * * * * */               
  /* READ procedure in table for une image dado in image.id*/               
 /* * * * * * * * * * * * * * * * * * * * * * * * * * * * */
