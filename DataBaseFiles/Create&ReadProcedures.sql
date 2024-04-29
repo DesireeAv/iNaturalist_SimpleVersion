@@ -90,12 +90,13 @@ CREATE OR REPLACE TYPE ImageObservationRecord AS OBJECT (
     taken_image_date VARCHAR2(15),
     taxon_name VARCHAR2(300),--taxon_id NUMBER,
     complete_taxonomy varchar2(2000),
+    taxon_common_name VARCHAR(300),
     OBSERVATION_ID NUMBER,
     OBSERVATION_NOTE VARCHAR2(4000)
 );
 
 CREATE OR REPLACE TYPE ImageObservationTable AS TABLE OF ImageObservationRecord;
-
+drop TYPE ImageObservationTable;
 -- Create a function to return the result set as a nested table
 CREATE OR REPLACE FUNCTION SELECT_IMAGE_OBSERVATIONS_TABLE(p_image_id IN NUMBER)
 RETURN ImageObservationTable
@@ -112,7 +113,8 @@ BEGIN
                GEOGRAPHIC_COORDENATES.LONGITUDE as gc_longitude, 
                IMAGE_OWNER.name as image_owner_name, 
                figure_url, 
-               IMAGE_DATE, 
+               IMAGE_DATE,
+               COMMON_SPECIES_NAME, 
                TAKEN_IMAGE_DATE, 
                TAXON_ID, taxon_name,
                OBSERVATION.ID as OBSERVATION_ID, 
@@ -142,6 +144,7 @@ BEGIN
             image_info.TAKEN_IMAGE_DATE,
             image_info.taxon_name,
             complete_taxonomy,
+            image_info.COMMON_SPECIES_NAME,
             image_info.OBSERVATION_ID,
             image_info.OBSERVATION_NOTE
         );
