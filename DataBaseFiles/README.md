@@ -54,7 +54,7 @@ END;
 
 - ## Read:
 - ### Primera función:
-Está en el archivo Create&ReadProcedures.sql en la línea 180, [link para esa función](Create&ReadProcedures.sql#L100).
+Está en el archivo Create&ReadProcedures.sql en la línea 100, [link para esa función](Create&ReadProcedures.sql#L100).
 Esta es la función propuesta que involucra al menos 4 tablas, las involucradas son:
 - `IMAGE`
 - `OBSERVATION`
@@ -71,9 +71,11 @@ Se llama la función de esta manera: Se cambia el 21 por el ID de la imagen a la
 ```sql
 SELECT * FROM TABLE(SELECT_IMAGE_OBSERVATIONS_TABLE(21));
 ```
+
 - ### Segunda función:
 Está en el archivo Create&ReadProcedures.sql en la línea 180, [link para esa función](Create&ReadProcedures.sql#L65).
 
+Devuelve los datos generales de todas lss observaciones en el sistema
 ```sql
 SELECT * FROM TABLE(SELECT_IMAGES_PANTALLA_PRINCIPAL);
 ```
