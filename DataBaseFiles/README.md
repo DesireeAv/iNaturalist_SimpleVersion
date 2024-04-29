@@ -8,10 +8,12 @@ Lista de tablas involucradas:
 - `FIGURE`
 - `GEOGRAPHIC_COORDENATES`
 - `IDENTIFICATION`
+- `PERSON`
+- `TAXON`
 
 ---
-### Funciones para las tablas: 
-#### `IMAGE`, `OBSERVATION`, `IMAGE_OWNER`, `FIGURE` y `GEOGRAPHIC_COORDENATES`
+## Funciones para las tablas: 
+#### `IMAGE`, `OBSERVATION`, `IMAGE_OWNER`, `FIGURE`, `PERSON`, `TAXON`, y `GEOGRAPHIC_COORDENATES`
 
 - ## Create:
 Está en el archivo Create&ReadProcedures.sql en la línea 180, [link para esa función](Create&ReadProcedures.sql#L180).
@@ -104,7 +106,7 @@ END;
 
 
 ---
-### Funciones para la tabla: 
+## Funciones para la tabla: 
 #### `IDENTIFICATION`
 
 - ## Create:
@@ -182,4 +184,17 @@ Se llama la función de esta manera: Se cambia el 21 por el ID de la identificac
 ```sql
 BEGIN delete_identification(21); 
 end;
+```
+
+---
+## Informe propuesto que involucra al menos cuatro tablas:
+Este es la vista en la pantalla principal de todas las observaciones existentes en el sistema, este informe involucra las tablas:
+#### `IMAGE`, `PERSON`, `FIGURE` y `TAXON`
+Está en el archivo Create&ReadProcedures.sql en la línea 26, [link para esa función](Create&ReadProcedures.sql#L26).
+
+Este hace un loop sobre todas las observaciones existentes y devuelve un informe con el ID de la imagen, el nombre y apellido de la persona dueña de la observación,la imagen como tal,la licencia de uso, las fechas en que la imagen fue tomada y subida a la plataforma y el nombre del taxón.
+
+Esta se llama así:
+```sql
+SELECT * FROM TABLE(SELECT_IMAGES_PANTALLA_PRINCIPAL);
 ```
