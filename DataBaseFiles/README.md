@@ -1,6 +1,6 @@
-# Funciones CRUD (Create, Read, Update and Delete) de todas las tablas necesarias:
+# Funciones CRUD (Create, Read, Update and Delete) de todas las tablas necesarias
 
-### Lista de tablas involucradas:
+Lista de tablas involucradas:
 
 - `IMAGE`
 - `OBSERVATION`
@@ -9,7 +9,7 @@
 - `GEOGRAPHIC_COORDENATES`
 - `IDENTIFICATION`
 
-## Funciones para las tablas `IMAGE`, `OBSERVATION`, `IMAGE_OWNER`, `FIGURE` y `GEOGRAPHIC_COORDENATES`:
+# Funciones para las tablas `IMAGE`, `OBSERVATION`, `IMAGE_OWNER`, `FIGURE` y `GEOGRAPHIC_COORDENATES`:
 
 ## - Create:
 Está en el archivo Create&ReadProcedures.sql en la línea 180, [link para esa función](Create&ReadProcedures.sql#L180).
@@ -102,7 +102,7 @@ END;
 
 
 
-## Funciones para la tabla `IDENTIFICATION`:
+# Funciones para la tabla `IDENTIFICATION`:
 
 ## - Create:
 Está en el archivo Create&ReadProcedures.sql en la línea 476, [link para esa función](Create&ReadProcedures.sql#L476).
