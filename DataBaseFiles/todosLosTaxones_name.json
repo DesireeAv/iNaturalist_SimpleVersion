@@ -1,0 +1,560 @@
+[
+  {
+    "TAXON_NAME": "Animalia"
+  },
+  {
+    "TAXON_NAME": "Plantae"
+  },
+  {
+    "TAXON_NAME": "Fungi"
+  },
+  {
+    "TAXON_NAME": "Protist"
+  },
+  {
+    "TAXON_NAME": "Archaea/Archaebacteria"
+  },
+  {
+    "TAXON_NAME": "Bacteria/Eubacteria"
+  },
+  {
+    "TAXON_NAME": "Anthocerotophyta"
+  },
+  {
+    "TAXON_NAME": "Bryophyta"
+  },
+  {
+    "TAXON_NAME": "Charophyta"
+  },
+  {
+    "TAXON_NAME": "Chlorophyta"
+  },
+  {
+    "TAXON_NAME": "Cycadophyta"
+  },
+  {
+    "TAXON_NAME": "Ginkgophyta"
+  },
+  {
+    "TAXON_NAME": "Glaucophyta"
+  },
+  {
+    "TAXON_NAME": "Gnetophyta"
+  },
+  {
+    "TAXON_NAME": "Lycopodiophyta (Lycophyta)"
+  },
+  {
+    "TAXON_NAME": "Magnoliophyta (Anthophyta)"
+  },
+  {
+    "TAXON_NAME": "Marchantiophyta (Hepatophyta)"
+  },
+  {
+    "TAXON_NAME": "Pinophyta (Coniferophyta)"
+  },
+  {
+    "TAXON_NAME": "Polypodiophyta (Monilophyta)"
+  },
+  {
+    "TAXON_NAME": "Porifera"
+  },
+  {
+    "TAXON_NAME": "Coelenterata (Cnidaria)"
+  },
+  {
+    "TAXON_NAME": "Platyhelminthes"
+  },
+  {
+    "TAXON_NAME": "Nematoda"
+  },
+  {
+    "TAXON_NAME": "Annelida"
+  },
+  {
+    "TAXON_NAME": "Arthropoda"
+  },
+  {
+    "TAXON_NAME": "Mollusca"
+  },
+  {
+    "TAXON_NAME": "Echinodermata"
+  },
+  {
+    "TAXON_NAME": "Hemichordata"
+  },
+  {
+    "TAXON_NAME": "Chordata"
+  },
+  {
+    "TAXON_NAME": "Ascomycota"
+  },
+  {
+    "TAXON_NAME": "Basidiomycota"
+  },
+  {
+    "TAXON_NAME": "Blastocladiomycota"
+  },
+  {
+    "TAXON_NAME": "Chytridiomycota"
+  },
+  {
+    "TAXON_NAME": "Glomeromycota"
+  },
+  {
+    "TAXON_NAME": "Microsporidia"
+  },
+  {
+    "TAXON_NAME": "Neocallimastigomycota"
+  },
+  {
+    "TAXON_NAME": "Euglenozoa"
+  },
+  {
+    "TAXON_NAME": "Alveolata"
+  },
+  {
+    "TAXON_NAME": "Stramenopiles (Heterokonta)"
+  },
+  {
+    "TAXON_NAME": "Rhizaria"
+  },
+  {
+    "TAXON_NAME": "Amoebozoa"
+  },
+  {
+    "TAXON_NAME": "Chromalveolata"
+  },
+  {
+    "TAXON_NAME": "Euryarchaeota"
+  },
+  {
+    "TAXON_NAME": "Firmicutes"
+  },
+  {
+    "TAXON_NAME": "Proteobacteria"
+  },
+  {
+    "TAXON_NAME": "Actinobacteria"
+  },
+  {
+    "TAXON_NAME": "Bacteroidetes"
+  },
+  {
+    "TAXON_NAME": "Cyanobacteria"
+  },
+  {
+    "TAXON_NAME": "Spirochetes"
+  },
+  {
+    "TAXON_NAME": "Chlamydiae"
+  },
+  {
+    "TAXON_NAME": "Aves"
+  },
+  {
+    "TAXON_NAME": "Fish"
+  },
+  {
+    "TAXON_NAME": "Reptilia"
+  },
+  {
+    "TAXON_NAME": "Mammalia"
+  },
+  {
+    "TAXON_NAME": "Amphibia"
+  },
+  {
+    "TAXON_NAME": "Monoplacophora"
+  },
+  {
+    "TAXON_NAME": "Polyplacophora"
+  },
+  {
+    "TAXON_NAME": "Bivalvia"
+  },
+  {
+    "TAXON_NAME": "Gastropoda"
+  },
+  {
+    "TAXON_NAME": "Cephalopoda"
+  },
+  {
+    "TAXON_NAME": "Scaphopoda"
+  },
+  {
+    "TAXON_NAME": "Dothideomycetes"
+  },
+  {
+    "TAXON_NAME": "Eurotiomycetes"
+  },
+  {
+    "TAXON_NAME": "Leotiomycetes"
+  },
+  {
+    "TAXON_NAME": "Pezizomycetes"
+  },
+  {
+    "TAXON_NAME": "Sordariomycetes"
+  },
+  {
+    "TAXON_NAME": "Saccharomycetes"
+  },
+  {
+    "TAXON_NAME": "Taphrinomycetes"
+  },
+  {
+    "TAXON_NAME": "Laboulbeniomycetes"
+  },
+  {
+    "TAXON_NAME": "Passeriformes"
+  },
+  {
+    "TAXON_NAME": "Anseriformes"
+  },
+  {
+    "TAXON_NAME": "Galliformes"
+  },
+  {
+    "TAXON_NAME": "Columbiformes"
+  },
+  {
+    "TAXON_NAME": "Accipitriformes"
+  },
+  {
+    "TAXON_NAME": "Strigiformes"
+  },
+  {
+    "TAXON_NAME": "Falconiformes"
+  },
+  {
+    "TAXON_NAME": "Charadriiformes"
+  },
+  {
+    "TAXON_NAME": "Psittaciformes"
+  },
+  {
+    "TAXON_NAME": "Salmoniformes"
+  },
+  {
+    "TAXON_NAME": "Perciformes"
+  },
+  {
+    "TAXON_NAME": "Siluriformes"
+  },
+  {
+    "TAXON_NAME": "Cypriniformes"
+  },
+  {
+    "TAXON_NAME": "Gadiformes"
+  },
+  {
+    "TAXON_NAME": "Scorpaeniformes"
+  },
+  {
+    "TAXON_NAME": "Pleuronectiformes"
+  },
+  {
+    "TAXON_NAME": "Tetraodontiformes"
+  },
+  {
+    "TAXON_NAME": "Anguilliformes"
+  },
+  {
+    "TAXON_NAME": "Clupeiformes"
+  },
+  {
+    "TAXON_NAME": "Squamata"
+  },
+  {
+    "TAXON_NAME": "Testudines"
+  },
+  {
+    "TAXON_NAME": "Crocodilia"
+  },
+  {
+    "TAXON_NAME": "Rhynchocephalia"
+  },
+  {
+    "TAXON_NAME": "Rodentia"
+  },
+  {
+    "TAXON_NAME": "Chiroptera"
+  },
+  {
+    "TAXON_NAME": "Carnivora"
+  },
+  {
+    "TAXON_NAME": "Primates"
+  },
+  {
+    "TAXON_NAME": "Artiodactyla"
+  },
+  {
+    "TAXON_NAME": "Cetacea"
+  },
+  {
+    "TAXON_NAME": "Perissodactyla"
+  },
+  {
+    "TAXON_NAME": "Lagomorpha"
+  },
+  {
+    "TAXON_NAME": "Soricomorpha"
+  },
+  {
+    "TAXON_NAME": "Proboscidea"
+  },
+  {
+    "TAXON_NAME": "Anura"
+  },
+  {
+    "TAXON_NAME": "Caudata"
+  },
+  {
+    "TAXON_NAME": "Gymnophiona"
+  },
+  {
+    "TAXON_NAME": "Crocodylidae"
+  },
+  {
+    "TAXON_NAME": "Alligatoridae"
+  },
+  {
+    "TAXON_NAME": "Gavialidae"
+  },
+  {
+    "TAXON_NAME": "Canidae"
+  },
+  {
+    "TAXON_NAME": "Felidae"
+  },
+  {
+    "TAXON_NAME": "Ursidae"
+  },
+  {
+    "TAXON_NAME": "Mustelidae"
+  },
+  {
+    "TAXON_NAME": "Procyonidae"
+  },
+  {
+    "TAXON_NAME": "Hyaenidae"
+  },
+  {
+    "TAXON_NAME": "Otariidae"
+  },
+  {
+    "TAXON_NAME": "Phocidae"
+  },
+  {
+    "TAXON_NAME": "Odobenidae"
+  },
+  {
+    "TAXON_NAME": "Ailuridae"
+  },
+  {
+    "TAXON_NAME": "Hominidae"
+  },
+  {
+    "TAXON_NAME": "Cercopithecidae"
+  },
+  {
+    "TAXON_NAME": "Callitrichidae"
+  },
+  {
+    "TAXON_NAME": "Hylobatidae"
+  },
+  {
+    "TAXON_NAME": "Lemuridae"
+  },
+  {
+    "TAXON_NAME": "Lorisidae"
+  },
+  {
+    "TAXON_NAME": "Atelidae"
+  },
+  {
+    "TAXON_NAME": "Tarsiidae"
+  },
+  {
+    "TAXON_NAME": "Ochotonidae "
+  },
+  {
+    "TAXON_NAME": "Leporidae"
+  },
+  {
+    "TAXON_NAME": "Ambystomatidae"
+  },
+  {
+    "TAXON_NAME": "Plethodontidae"
+  },
+  {
+    "TAXON_NAME": "Salamandridae"
+  },
+  {
+    "TAXON_NAME": "Muridae"
+  },
+  {
+    "TAXON_NAME": "Cricetidae"
+  },
+  {
+    "TAXON_NAME": "Sciuridae"
+  },
+  {
+    "TAXON_NAME": "Castoridae"
+  },
+  {
+    "TAXON_NAME": "Heteromyidae"
+  },
+  {
+    "TAXON_NAME": "Dipodidae"
+  },
+  {
+    "TAXON_NAME": "Erethizontidae"
+  },
+  {
+    "TAXON_NAME": "Geomyidae"
+  },
+  {
+    "TAXON_NAME": "Myocastoridae"
+  },
+  {
+    "TAXON_NAME": "Octodontidae"
+  },
+  {
+    "TAXON_NAME": "Pteropodidae"
+  },
+  {
+    "TAXON_NAME": "Vespertilionidae"
+  },
+  {
+    "TAXON_NAME": "Rhinolophidae"
+  },
+  {
+    "TAXON_NAME": "Phyllostomidae"
+  },
+  {
+    "TAXON_NAME": "Molossidae"
+  },
+  {
+    "TAXON_NAME": "Emballonuridae"
+  },
+  {
+    "TAXON_NAME": "Megadermatidae"
+  },
+  {
+    "TAXON_NAME": "Nycteridae"
+  },
+  {
+    "TAXON_NAME": "Miniopteridae"
+  },
+  {
+    "TAXON_NAME": "Rhinopomatidae"
+  },
+  {
+    "TAXON_NAME": "Acanthisittidae"
+  },
+  {
+    "TAXON_NAME": "Aegithalidae"
+  },
+  {
+    "TAXON_NAME": "Alaudidae"
+  },
+  {
+    "TAXON_NAME": "Bombycillidae"
+  },
+  {
+    "TAXON_NAME": "Certhiidae"
+  },
+  {
+    "TAXON_NAME": "Corvidae"
+  },
+  {
+    "TAXON_NAME": "Estrildidae"
+  },
+  {
+    "TAXON_NAME": "Fringillidae"
+  },
+  {
+    "TAXON_NAME": "Hirundinidae"
+  },
+  {
+    "TAXON_NAME": "Muscicapidae"
+  },
+  {
+    "TAXON_NAME": "Crocodylus"
+  },
+  {
+    "TAXON_NAME": "Aconaemys"
+  },
+  {
+    "TAXON_NAME": "Octodon"
+  },
+  {
+    "TAXON_NAME": "Octomys"
+  },
+  {
+    "TAXON_NAME": "Tympanoctomys"
+  },
+  {
+    "TAXON_NAME": "Leopardus"
+  },
+  {
+    "TAXON_NAME": "Panthera"
+  },
+  {
+    "TAXON_NAME": "Canis"
+  },
+  {
+    "TAXON_NAME": "Atelocynus"
+  },
+  {
+    "TAXON_NAME": "Cerdocyon"
+  },
+  {
+    "TAXON_NAME": "Chrysocyon"
+  },
+  {
+    "TAXON_NAME": "Speothos"
+  },
+  {
+    "TAXON_NAME": "Lycalopex "
+  },
+  {
+    "TAXON_NAME": "Hesperiphona"
+  },
+  {
+    "TAXON_NAME": "Viridonia sagittirostris"
+  },
+  {
+    "TAXON_NAME": "Hesperiphona vespertina"
+  },
+  {
+    "TAXON_NAME": "Hesperiphona abellei"
+  },
+  {
+    "TAXON_NAME": "Aureus"
+  },
+  {
+    "TAXON_NAME": "Latrans"
+  },
+  {
+    "TAXON_NAME": "Microtis"
+  },
+  {
+    "TAXON_NAME": "Thous"
+  },
+  {
+    "TAXON_NAME": "Fuscus"
+  },
+  {
+    "TAXON_NAME": "Porteri"
+  },
+  {
+    "TAXON_NAME": "Bridgesi"
+  },
+  {
+    "TAXON_NAME": "Degus"
+  }
+]
