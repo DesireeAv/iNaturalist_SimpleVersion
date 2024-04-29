@@ -2,16 +2,16 @@
 
 ### Lista de tablas involucradas:
 
-- IMAGE
-- OBSERVATION
-- IMAGE_OWNER
-- FIGURE
-- GEOGRAPHIC_COORDENATES
-- IDENTIFICATION
+- `IMAGE`
+- `OBSERVATION`
+- `IMAGE_OWNER`
+- `FIGURE`
+- `GEOGRAPHIC_COORDENATES`
+- `IDENTIFICATION`
 
 ## Funciones para las tablas `IMAGE`, `OBSERVATION`, `IMAGE_OWNER`, `FIGURE` y `GEOGRAPHIC_COORDENATES`:
 
-### - Create:
+## - Create:
 Está en el archivo Create&ReadProcedures.sql en la línea 180, [link para esa función](Create&ReadProcedures.sql#L180).
 
 Recibe una fecha de tomada la imagen, la fecha en la que se subió la imagen, el ID de la persona que lo está subiendo, la latitud y longitud donde fué tomada la imagen, el dueño de la imagen, el nombre del taxon que se observa en la imagen, la licencia de uso, el link de la imagen y las notas de la nueva observación.
@@ -48,7 +48,7 @@ BEGIN
 END;
 ```
 
-### - Read:
+## - Read:
 Está en el archivo Create&ReadProcedures.sql en la línea 180, [link para esa función](Create&ReadProcedures.sql#L80).
 
 Recibe los valores 
@@ -60,7 +60,7 @@ Se llama la función de esta manera: Se cambia el 21 por el ID de la imagen a la
 SELECT * FROM TABLE(SELECT_IMAGE_OBSERVATIONS_TABLE(21));
 ```
 
-### - Update:
+## - Update:
 Está en el archivo Update&DeleteProcedures.sql en la línea 218, [link para esa función](Update&DeleteProcedures.sql#L218).
 
 Recibe los valores **opcionales**: una fecha de tomada la imagen, la fecha en la que se subió la imagen, el ID de la persona que lo está subiendo, la latitud y longitud donde fué tomada la imagen, el dueño de la imagen, el nombre del taxon que se observa en la imagen, la licencia de uso, el link de la imagen y las notas de la nueva observación.
@@ -83,7 +83,7 @@ Se llama la función de esta manera: Se cambia el 21 por el ID de la imagen la c
 SELECT * FROM TABLE(SELECT_IMAGE_OBSERVATIONS_TABLE(21));
 ```
 
-### - Delete:
+## - Delete:
 Está en el archivo Update&DeleteProcedures.sql en la línea 340, [link para esa función](Update&DeleteProcedures.sql#L340).
 
 
@@ -104,7 +104,7 @@ END;
 
 ## Funciones para la tabla `IDENTIFICATION`:
 
-### - Create:
+## - Create:
 Está en el archivo Create&ReadProcedures.sql en la línea 476, [link para esa función](Create&ReadProcedures.sql#L476).
 
 Recibe los valores de la calidad de la observación y su ID, el ID de la persona que realiza la identificación y la fecha que se hizo.
@@ -127,7 +127,7 @@ BEGIN new_identification(
 end;
 ```
 
-### - Read:
+## - Read:
 Está en el archivo Create&ReadProcedures.sql en la línea 529, [link para esa función](Create&ReadProcedures.sql#L529).
 
 Recibe el ID de la observación la cuál queremos verle todas las identificaciones que se le han hecho.
@@ -141,7 +141,7 @@ Se llama la función de esta manera: Se cambia el 5 por el ID de la observación
 SELECT * FROM TABLE(show_all_identifications(5));
 ```
 
-### - Update:
+## - Update:
 Está en el archivo Update&DeleteProcedures.sql en la línea 6, [link para esa función](Update&DeleteProcedures.sql#L6).
 
 Recibe los valores opcionales de la calidad de la observación y su ID, el ID de la persona que realiza la identificación y la fecha que se hizo.
@@ -165,7 +165,7 @@ BEGIN update_identification(
 END;
 ```
 
-### - Delete:
+## - Delete:
 Está en el archivo Update&DeleteProcedures.sql en la línea 53, [link para esa función](Update&DeleteProcedures.sql#L53).
 
 
