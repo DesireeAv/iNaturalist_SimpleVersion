@@ -10,7 +10,8 @@ Lista de tablas involucradas:
 - `IDENTIFICATION`
 
 ---
-### Funciones para las tablas: `IMAGE`, `OBSERVATION`, `IMAGE_OWNER`, `FIGURE` y `GEOGRAPHIC_COORDENATES`
+### Funciones para las tablas: 
+#### `IMAGE`, `OBSERVATION`, `IMAGE_OWNER`, `FIGURE` y `GEOGRAPHIC_COORDENATES`
 
 - ## Create:
 Está en el archivo Create&ReadProcedures.sql en la línea 180, [link para esa función](Create&ReadProcedures.sql#L180).
@@ -103,7 +104,8 @@ END;
 
 
 ---
-### Funciones para la tabla: `IDENTIFICATION`
+### Funciones para la tabla: 
+#### `IDENTIFICATION`
 
 - ## Create:
 Está en el archivo Create&ReadProcedures.sql en la línea 476, [link para esa función](Create&ReadProcedures.sql#L476).
