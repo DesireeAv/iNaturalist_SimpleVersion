@@ -73,7 +73,7 @@ SELECT * FROM TABLE(SELECT_IMAGE_OBSERVATIONS_TABLE(21));
 ```
 
 - ### Segunda función:
-Está en el archivo Create&ReadProcedures.sql en la línea 180, [link para esa función](Create&ReadProcedures.sql#L65).
+Está en el archivo Create&ReadProcedures.sql en la línea 26, [link para esa función](Create&ReadProcedures.sql#L26).
 
 Devuelve los datos generales de todas lss observaciones en el sistema
 ```sql
