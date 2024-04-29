@@ -3,7 +3,7 @@
 
 En el folder `DataBaseFiles` están todos los archivos de la base de datos del proyecto.
 
-En el archivo PDF se encuentra la documentación completa.
+En el archivo PDF `Documentación` se encuentra la documentación completa.
 
 
 ## Authors
