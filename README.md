@@ -10,6 +10,6 @@
 
 ### Estudiantes:
 
-- [Emmanuel Rojas Soto](https://github.com/Kyaki101), carnet: 20222002018
+- [Emmanuel Rojas Soto](https://github.com/Kyaki101), carnet: 2022200218
 - [Desireé Avilés Alfaro](https://github.com/desireeav), carnet: 2023234970
 
