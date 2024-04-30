@@ -1,0 +1,441 @@
+$gray: #9b9b9b;
+$primary: #11998e;
+$secondary: #38ef7d;
+$white: #fff;
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    background-color: hsl(0, 0%, 94%)
+}
+
+.NavBar{
+    background-color: hsl(0, 11%, 93%);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+    height: 50px;
+    padding: 0 1rem;
+    border-bottom: 0.2px ridge lightgrey;
+}
+
+.LogoText{
+    font-family: 'Fira Sans';
+    font-size: 30px;
+    padding: 0;
+    color: #11998e;
+} 
+
+.NavBar a{
+    font-family: Arial;
+    text-decoration: none;
+}
+
+.NavBar ul{
+    list-style: none;
+
+    display: flex;
+}
+
+.NavBar ul li{
+    margin: 10px;
+    color: rgb(25, 25, 25)
+}
+
+.container{
+    width: 100vw;
+    height: 93.1vh;
+    display: flex;
+    overflow: hidden;
+    
+}
+
+.container .leftlog{
+    width: 50%;
+    background-color: lightgreen;
+}
+
+.container .rightlog{
+    width: 50%;
+
+
+}
+
+.container h1 {
+
+    font-family: 'Arial', sans-serif;
+    color: #9b9b9b;
+    font-size: 25px;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+    top: 30px;
+}
+
+.container ul{
+    width: 100%;
+    list-style: none;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px; /* Add padding for spacing */}
+
+.container li{
+    margin-bottom: 20px;
+}
+
+.form__group {
+    position: relative;
+    padding: 15px 0 0;
+    margin-top: 10px;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.form__field {
+  font-family: 'Fira Sans';
+  width: 100%;
+  border: 0;
+  border-bottom: 2px solid #9b9b9b;
+  outline: 0;
+  font-size: 1.3rem;
+  color: #fff;
+  padding: 7px 0;
+  background: transparent;
+  transition: border-color 0.2s;
+
+  &::placeholder {
+    color: transparent;
+  }
+
+  &:placeholder-shown ~ .form__label {
+    font-size: 1.3rem;
+    cursor: text;
+    top: 20px;
+  }
+}
+
+.form__label {
+  font-family: 'Fira Sans';
+  position: absolute;
+  top: 0;
+  display: block;
+  transition: 0.2s;
+  font-size: 1rem;
+  color: #9b9b9b;
+}
+
+.form__field:focus {
+  ~ .form__label {
+    position: absolute;
+    top: 0;
+    display: block;
+    transition: 0.2s;
+    font-size: 1rem;
+    color: #11998e;
+    font-weight:700;    
+  }
+  padding-bottom: 6px;  
+  font-weight: 700;
+  border-width: 3px;
+  border-image: linear-gradient(to right, #11998e,#38ef7d);
+  border-image-slice: 1;
+}
+/* reset input */
+.form__field{
+  &:required,&:invalid { box-shadow:none; }
+}
+
+
+.container button{
+    background: linear-gradient(to right, #11998e, #38ef7d);
+    color: white;
+    width: 400px;
+    height: 60px;
+    font-size: 40px;
+    border-radius: 50px;
+    border-style: none;
+    position: relative;
+    top: 40px;
+    cursor: pointer;
+}
+
+.container img{
+    width: 100%
+}
+
+
+.widget{
+    all: unset;
+    width: 200px;
+    height: 250px;
+    padding: 0;
+    background-color: rgb(255, 255, 255);
+    border-radius: 5px;
+    border: 0.5px ridge;
+    cursor: pointer;
+}
+
+.widget img{
+    height: 200px;
+    width: 200px;
+    max-width: 100%; /* Element will not exceed the width of its container */
+    position: relative;
+    object-fit: cover;
+    top: -4px;
+    border-top-left-radius: 5px; /* Top-left corner */
+    border-top-right-radius: 5px; /* Top-right corner */
+}
+
+.widget footer{
+    top: -14px;
+    position: relative;
+}
+
+.widget img:hover{
+    filter: grayscale(50%);
+}
+
+.ObsList{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.ObsList li{
+    margin: 30px;
+}
+
+.widget footer{
+    padding: 10px 20px;
+    text-align: center;
+    font-family: sans-serif
+}
+
+.TaxCont{
+    width: 1200px;
+    height: 540px;
+    display: flex;
+
+    border: 1px solid lightgrey;
+    background-color: white;
+}
+
+.TaxImgCont{
+    width: 50%;
+    position: relative;
+    border-right: 1px solid lightgrey;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.TaxImgCont img{
+    width: 75%;
+    height: 75%;
+
+}
+
+.annoyed {
+    width: 100vw;
+    height: 550px;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.authData{
+    width: 100%;
+    border-bottom: 1px solid lightgrey;
+    height: 80px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    flex: 0.2;
+}
+
+.authData p{
+    font-family: 'Fira Sans', Arial;
+    color: #11998e;
+    text-align: center;
+    font-size: 20px;
+}
+
+.TaxTitle {
+    font-family: 'Fira Sans';
+    color: #11998e;
+    text-align: center;
+    font-size: 30px;
+
+}
+
+.TaxDataCont{
+    flex: 1;
+}
+
+.TaxDataCont ul{
+    list-style: none;
+    padding: 0;
+}
+
+.TaxDataCont li{
+    margin: 10px;
+}
+
+.TaxDTitle{
+    text-align: center;
+    color: #11998e; 
+    font-family: 'Fira Sans'
+}
+
+.TaxDataCont p{
+    font-family: 'Fira Sans', sans-serif;
+    font-size: 18px;
+}
+
+.BS{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    justify-content: center;
+}
+
+
+.UploadForm {
+    list-style: none;
+}
+
+.UploadForm button{
+    background: linear-gradient(to right, #11998e, #38ef7d);
+    color: white;
+    width: 400px;
+    height: 60px;
+    font-size: 40px;
+    border-radius: 50px;
+    border-style: none;
+    position: relative;
+    top: 40px;
+    cursor: pointer;
+}
+
+.UpButt{
+    display: flex;
+    justify-content: center;
+}
+
+
+.LoadCont{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* HTML: <div class="loader"></div> */
+.loader {
+    width: 50px;
+    aspect-ratio: 1;
+    display: grid;
+    border: 4px solid #0000;
+    border-radius: 50%;
+    border-right-color: #25b09b;
+    animation: l15 1s infinite linear;
+}
+.loader::before,
+.loader::after {    
+    content: "";
+    grid-area: 1/1;
+    margin: 2px;
+    border: inherit;
+    border-radius: 50%;
+    animation: l15 2s infinite;
+}
+.loader::after {
+    margin: 8px;
+    animation-duration: 3s;
+}
+@keyframes l15{ 
+    100%{transform: rotate(1turn)}
+}
+
+.dumby{
+    justify-content: center;
+    text-align: center;
+}
+
+.dumber{
+    background: linear-gradient(to right, #11998e, #38ef7d);
+    color: white;
+    width: 400px;
+    height: 60px;
+    font-size: 40px;
+    border-radius: 50px;
+    border-style: none;
+    position: relative;
+    cursor: pointer;
+    top: 10px;
+
+}
+
+.uplButt{
+    display: flex;
+    justify-content: center;
+}
+
+.uplButt button{
+    background: linear-gradient(to right, #11998e, #38ef7d);
+    color: white;
+    width: 400px;
+    height: 60px;
+    font-size: 40px;
+    border-radius: 50px;
+    border-style: none;
+    position: relative;
+    cursor: pointer;
+    top: 10px;
+
+}
+
+.contata {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.contata button {
+    background: linear-gradient(to right, #11998e, #38ef7d);
+    color: white;
+    width: 200px;
+    height: 60px;
+    font-size: 40px;
+    border-radius: 50px;
+    border-style: none;
+    position: relative;
+    cursor: pointer;
+    top: 10px;
+}
+
+
+.InfList{
+    display: flex;
+    gap: 3rem;
+}
+
+.InfList button{
+    background: linear-gradient(to right, #11998e, #38ef7d);
+    color: white;
+    width: 100px;
+    height: 30px;
+    font-size: 20px;
+    border-radius: 50px;
+    border-style: none;
+    position: relative;
+    cursor: pointer;
+    top: 10px;
+}
