@@ -1,0 +1,12 @@
+proyecto1basesi_high = (description= (retry_count=20)(retry_delay=3)(address=(protocol=tcps)(port=1522)(host=adb.us-chicago-1.oraclecloud.com))(connect_data=(service_name=g111ff6815e568a_proyecto1basesi_high.adb.oraclecloud.com))(security=(ssl_server_dn_match=yes)))
+
+proyecto1basesi_low = (description= (retry_count=20)(retry_delay=3)(address=(protocol=tcps)(port=1522)(host=adb.us-chicago-1.oraclecloud.com))(connect_data=(service_name=g111ff6815e568a_proyecto1basesi_low.adb.oraclecloud.com))(security=(ssl_server_dn_match=yes)))
+
+proyecto1basesi_medium = (description= (retry_count=20)(retry_delay=3)(address=(protocol=tcps)(port=1522)(host=adb.us-chicago-1.oraclecloud.com))(connect_data=(service_name=g111ff6815e568a_proyecto1basesi_medium.adb.oraclecloud.com))(security=(ssl_server_dn_match=yes)))
+
+proyecto1basesi_tp = (description= (retry_count=20)(retry_delay=3)(address=(protocol=tcps)(port=1522)(host=adb.us-chicago-1.oraclecloud.com))(connect_data=(service_name=g111ff6815e568a_proyecto1basesi_tp.adb.oraclecloud.com))(security=(ssl_server_dn_match=yes)))
+
+proyecto1basesi_tpurgent = (description= (retry_count=20)(retry_delay=3)(address=(protocol=tcps)(port=1522)(host=adb.us-chicago-1.oraclecloud.com))(connect_data=(service_name=g111ff6815e568a_proyecto1basesi_tpurgent.adb.oraclecloud.com))(security=(ssl_server_dn_match=yes)))
+
+
+
