@@ -70,6 +70,7 @@ SELECT * FROM TABLE(SELECT_IMAGES_PANTALLA_PRINCIPAL);
 
 
 --________________________________________________________________________________________--
+
   /* * * * * * * * * * * * * * * * * * * * * * * * * * * * */               
  /* READ procedure in table for une image dado in image.id*/               
 /* * * * * * * * * * * * * * * * * * * * * * * * * * * * */
@@ -78,7 +79,8 @@ SELECT * FROM TABLE(SELECT_IMAGES_PANTALLA_PRINCIPAL);
 -- Define a nested table type to hold the result set
 CREATE OR REPLACE TYPE ImageObservationRecord AS OBJECT (
     id NUMBER,
-    use_license VARCHAR2(100),
+    use_license VARCHAR2(100), 
+    person_id INT,
     person_name VARCHAR2(300), -- person_id NUMBER,
     person_last_name VARCHAR2(300),
     gc_latitude NUMBER,
@@ -89,13 +91,12 @@ CREATE OR REPLACE TYPE ImageObservationRecord AS OBJECT (
     taken_image_date VARCHAR2(15),
     taxon_name VARCHAR2(300),--taxon_id NUMBER,
     complete_taxonomy varchar2(2000),
-    taxon_common_name VARCHAR(300),
     OBSERVATION_ID NUMBER,
     OBSERVATION_NOTE VARCHAR2(4000)
 );
 
 CREATE OR REPLACE TYPE ImageObservationTable AS TABLE OF ImageObservationRecord;
-drop TYPE ImageObservationTable;
+
 -- Create a function to return the result set as a nested table
 CREATE OR REPLACE FUNCTION SELECT_IMAGE_OBSERVATIONS_TABLE(p_image_id IN NUMBER)
 RETURN ImageObservationTable
@@ -107,13 +108,13 @@ BEGIN
         SELECT image.id as i_id, 
                USE_LICENSE as, 
                PERSON.name as person_name, 
+               person.id as person_id,
                person.LAST_NAME as person_last_name, 
                GEOGRAPHIC_COORDENATES.LATITUDE as gc_latitude, 
                GEOGRAPHIC_COORDENATES.LONGITUDE as gc_longitude, 
                IMAGE_OWNER.name as image_owner_name, 
                figure_url, 
-               IMAGE_DATE,
-               COMMON_SPECIES_NAME, 
+               IMAGE_DATE, 
                TAKEN_IMAGE_DATE, 
                TAXON_ID, taxon_name,
                OBSERVATION.ID as OBSERVATION_ID, 
@@ -133,6 +134,7 @@ BEGIN
         image_observation_table(image_observation_table.LAST) := ImageObservationRecord(
             image_info.i_id,
             image_info.USE_LICENSE,
+            image_info.person_id,
             image_info.person_name,
             image_info.person_last_name,
             image_info.gc_latitude,
@@ -143,7 +145,6 @@ BEGIN
             image_info.TAKEN_IMAGE_DATE,
             image_info.taxon_name,
             complete_taxonomy,
-            image_info.COMMON_SPECIES_NAME,
             image_info.OBSERVATION_ID,
             image_info.OBSERVATION_NOTE
         );
@@ -169,6 +170,9 @@ select * FROM IMAGE;
 
 
 
+
+
+
 --________________________________________________________________________________________--
   /* * * * * * * * * * * * * * * * * * * * * * * * */               
  /* CREATE procedure for a NEW image & observacion*/               
@@ -183,7 +187,7 @@ CREATE OR REPLACE PROCEDURE create_new_image_and_observation (
     new_latitude in varchar2,
     new_longitude in varchar2,
     new_image_owner_name in varchar2,
-    new_taxon_name in VARCHAR, --new_taxon_id in INT, 
+    new_taxon_name in VARCHAR, 
     new_use_licence in varchar2,
     new_figure_url in varchar2,
     new_observation_note in varchar2
@@ -524,6 +528,7 @@ CREATE OR REPLACE TYPE IdentificationRecordType AS OBJECT (
 
 CREATE OR REPLACE TYPE IdentificationTableType AS TABLE OF IdentificationRecordType;
 /
+
 CREATE OR REPLACE FUNCTION show_all_identifications(
     s_observation_id IN INT
 ) RETURN IdentificationTableType 
@@ -557,7 +562,7 @@ END;
 
 
 
-SELECT * FROM TABLE(show_all_identifications(5));
+SELECT * FROM TABLE(show_all_identifications(29));
 
 
 
